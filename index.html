@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>nace</title>
+</head>
+<body>
+    <!-- menu de navegacion -->
+    <header class="header">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar-local" href="#">
+                    <i class="bi bi-flower3 text-info-emphasis"></i>
+                    <span class="text-info-emphasis">NACE</span>
+                </a>
+                <!-- boton del menu -->
+                <button class="navbar-toggler" type="button"
+                     data-bs-toggle="collapse" 
+                    data-bs-target="#menu" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- elementos del menu colapsable -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto nav-local">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/productos.html">productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/guía de talles.html">guía de talles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/contacto.html">contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/cuenta.html"><i class="fa-solid fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- contenido central-->
+    <main class="main">
+      <!-- carrusel -->
+        <section class="carousel">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active d-item" data-bs-interval="10000">
+                    <img src="img/img-carrusel1.png" class="d-block w-100" alt="imagen-remeras">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/img-carrusel2.png" class="d-block w-100" alt="imagen-buzos">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/img-carrusel3.png" class="d-block w-100" alt="imagen-pantalones">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <!-- titulo -->
+        <section class="title">
+          <div class="title-destac">
+            <h2>productos destacados</h2>
+            <hr>
+          </div>
+        </section>
+        <!-- tarjetas -->
+        <section class="prod-destac">
+              <!-- card 1 -->
+              <div class="card">
+                <img class="d-img" src="img/remera-wastcoast.jpeg" class="card-img-top" alt="destc.prod">
+                <div class="card-body">
+                  <h5 class="card-title">remera wast coast</h5>
+                  <p class="card-text">$7500</p>
+                  <a href="#" class="btn btn-local">comprar</a>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="card">
+                <img class="d-img" src="img/remera-wastcoast.jpeg" class="card-img-top" alt="destc.prod">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-local">Go somewhere</a>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="card">
+                <img class="d-img" src="img/remera-wastcoast.jpeg" class="card-img-top" alt="destc.prod">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-local">Go somewhere</a>
+                </div>
+              </div>
+        </section>
+    </main>
+    <!-- pie de pagina -->
+    <footer class="footer">
+        <div class="g-1">
+            <!-- box 1 -->
+            <div class="box">
+                <h2>ayuda</h2>
+                <p>
+                   Lorem ipsum, dolor sit amet.
+                   Lorem ipsum, dolor sit amet.
+                   Lorem ipsum, dolor sit amet.
+                </p>
+            </div>
+            <!-- box 2 -->
+            <div class="box">
+                <h2>acerca de nace</h2>
+                <p>
+                   Lorem ipsum, dolor sit amet.
+                   Lorem ipsum, dolor sit amet.
+                   Lorem ipsum, dolor sit amet.
+                </p>
+            </div>
+            <!-- box 3 -->
+            <div class="box">
+                <h2>siguenos</h2>
+                <div class="red-social">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="g-2">
+            <small>©  nace - todos los derechos reservados - 2023</small> 
+        </div>    
+    </footer>
+
+    <script src="https://kit.fontawesome.com/4cb5abd14e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
