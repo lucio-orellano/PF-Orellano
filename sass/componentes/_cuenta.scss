@@ -1,0 +1,67 @@
+.title-cta {
+    margin: 50px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    hr {
+        color: #009753;
+    }
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    form {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        text-align: center;
+        padding: 20px 25px;
+        box-shadow: 0 3px 6px rgba(0,0 ,0 ,0.16);
+        .title-login {
+            color: #252525;
+            font-size: 35px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        label {
+            margin-bottom: 35px;
+            .fa-solid {
+                font-size: 20px;
+                color: #A9EECF;
+                margin-right: 10px;
+            }
+            input {
+                outline: none;
+                border: none;
+                color: #252525;
+                border-bottom: solid 1px #A9EECF;
+                padding: 0 5px;
+                font-size: 18px;
+                padding: 0 5px;
+                font-size: 18px;
+            }
+        }
+        .link {
+            color: #252525;
+            margin-bottom: 15px;
+        }
+        .button {
+            color: white;
+            border: none;
+            background: #A9EECF;
+            padding: 10px 15px;
+            font-size: 20px;
+        }
+        .link-2 {
+            color: #252525;
+        }
+        .creAR-cuenta {
+            margin-top: 15px;
+        }
+    }
+}
+

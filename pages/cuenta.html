@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>nace</title>
+    <title>cuenta - nace</title>
 </head>
-<body>
+<body id="body">
     <!-- menu de navegacion -->
     <header class="header">
         <nav class="navbar navbar-expand-md">
@@ -32,7 +32,7 @@
                             <a class="nav-link active" href="./productos.html">productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./guía de talles.html">guía de talles</a>
+                            <a class="nav-link active" href="./guía-de-talles.html">guía de talles</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="./contacto.html">contacto</a>
@@ -46,74 +46,71 @@
         </nav>
     </header>
     <!-- contenido central -->
-    <main>
-        
-        <div class="title-tds">
-            <h2>iniciar sesión / registrarse</h2>
+    <main id="main">
+        <div class="title-cta">
+            <h1>iniciar sesión / registrarse</h1>
             <hr>
         </div>
-
-        <div class="is">
-            <h2>inicio de sesión</h2>
-        </div>
-        
         <div class="formulario">
-            
-            <form>
-                <div class="username">
-                    <label for="exampleFormControlInput1" class="form-label">email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ingrese su email">
-                </div>
-                <div class="password">
-                    <label for="exampleFormControlInput1" class="form-label">contraseña</label>
-                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="ingrese su contraseña">
-                </div>
-                <div class="recordatorio">
-                    <a href="#">¿olvidó su contraseña?</a>
-                </div>
-                    <input type="submit" value="iniciar">
-                    <div class="registro">
-                    ¿no tiene una cuenta?<a href="#">crear cuenta</a>
-                </div>
+            <form action="">
+                <h2 class="title-login">iniciar sesión</h2>
+                <label>
+                    <i class="fa-sharp fa-solid fa-user"></i>
+                    <input type="text" class="username" placeholder="nombre de usuario">
+                </label>
+                <label>
+                    <i class="fa-sharp fa-solid fa-lock"></i>
+                    <input type="password" class="password" placeholder="contraseña">
+                </label>
+
+                <a href="#" class="link">olvidaste tu contraseña?</a>
+    
+                <button class="button">iniciar</button>
+                <p class="creAR-cuenta">no tienes una cuenta? <a href="#" class="link-2">crear cuenta</a></p>
             </form>
         </div>
     </main>
+        
     <!-- pie de pagina -->
-    <footer class="footer">
+    <footer id="footer">
         <div class="g-1">
+            <!-- box 1 -->
             <div class="box">
-                <h2>ayuda</h2>
-                <p>
-                   Lorem ipsum, dolor sit amet.
-                   Lorem ipsum, dolor sit amet.
-                   Lorem ipsum, dolor sit amet.
-                </p>
+                <h2>medios de pago</h2>
+                <img src="../img/naranja.png" alt="naranja">
+                <img src="../img/amex.png" alt="amex">
+                <img src="../img/mastercard.png" alt="master">
+                <img src="../img/pagofacil.png" alt="pg">
+                <img src="../img/rapipago.png" alt="rp">
+                <img src="../img/visa.png" alt="visa">
+                <img src="../img/mercadopago.png" alt="mp">
             </div>
+            <!-- box 2 -->
             <div class="box">
                 <h2>acerca de nace</h2>
                 <p>
-                   Lorem ipsum, dolor sit amet.
-                   Lorem ipsum, dolor sit amet.
-                   Lorem ipsum, dolor sit amet.
+                   Nace es una tienda de indumentaria, creada en 2023,
+                   que brinda la mejor calidad a sus clientes.
                 </p>
             </div>
+            <!-- box 3 -->
             <div class="box">
-                <h2>siguenos</h2>
+                <h2>nuestras redes sociales</h2>
                 <div class="red-social">
-                    <a href="#">
+                    <a href="https://www.facebook.com/">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.instagram.com/">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://twitter.com/?lang=es">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                 </div>
             </div>
         </div>
         <div class="g-2">
-            <small>©  nace - todos los derechos reservados 2023 </small> 
+            <small>©  nace - todos los derechos reservados - 2023</small> 
         </div>    
     </footer>
     
