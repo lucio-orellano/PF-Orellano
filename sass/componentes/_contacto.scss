@@ -1,20 +1,19 @@
 .title-cto {
-    margin: 50px;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-size: 30px;
+    margin: nth($size, 10);
+    font-family: nth($font-f, 1);
+    @extend %transform;
+    font-size: nth($size, 8);
     hr {
-        color: #009753;
+        color: nth($colores, 2);
     }
 }
 
 .txt-cto {
     p {
-        text-align: center;
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 30px;
-        color: #1D553D;
+        @extend %t-center;
+        font-size: nth($size, 7);
+        font-family: nth($font-f, 2);
+        color: nth($colores, 10);
     }
 }
 
@@ -22,40 +21,72 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin: 100px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: nth($size, 13);
+    font-size: nth($size, 6);
+    font-family: nth($font-f, 2);
     i {
-        color: #1D553D;
+        color: nth($colores, 3);
     }
 }
 .form-map {
     display: flex;
     justify-content: space-around;
     iframe {
-        width: 600px;
-        height: 300px;
+        width: nth($size, 17);
+        height: nth($size, 15);
     }
 }
 .form-cto {
     input {
-        width: 300px;
-        margin-bottom: 15px;
+        width: nth($size, 14);
+        margin-bottom: nth($size, 6);
     }
     textarea {
-        width: 500px;
-        margin-bottom: 15px;
+        width: nth($size, 16);
+        margin-bottom: nth($size, 6);
     }
 }
 
 .btn-cto {
-    background-color: #A9EECF;
-    padding: 2px;
-    border: solid 1px #75C5B5;
-    border-radius: 10px;
-    color: #4A4A4A;
+    @include cM (#A9EECF, #4A4A4A, 4px);
+    border: solid nth($size, 1) nth($colores, 7);
+    border-radius: nth($size, 2);
 }
 .btn-cto:hover {
-    background-color: #D0F9E7;
-    color: #1D553D;
+    background-color: nth($colores, 8);
+    color: nth($colores, 3);
+}
+
+@media (max-width:768px)  {
+    .title-cto {
+        text-align: center;
+    }
+    .cto-txt {
+        margin: nth($size, 7);
+        font-size: nth($size, 6);
+    }
+    .form-map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        iframe {
+            width: nth($size, 16);
+            height: nth($size, 14);
+        }
+    }
+    .form-cto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input {
+            width: nth($size, 14);
+        }
+        textarea {
+            width: nth($size, 15);
+            margin-bottom: nth($size, 9);
+        }
+    }
+    .btn-cto {
+        margin-bottom: nth($size, 8);
+    }
 }

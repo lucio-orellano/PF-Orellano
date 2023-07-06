@@ -1,55 +1,62 @@
 .title-gdt {
-    margin: 3rem;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-size: 2rem;
+    margin: nth($size, 10);
+    font-family: nth($font-f, 1);
+    @extend %transform;
+    font-size: nth($size, 8);
     hr {
-        color: #009753;
+        color: nth($colores , 2);
     }
 }
 
 .txt-gdt {
     P {
-        text-align: center;
-        font-family: sans-serif;
+        @extend %t-center;
+        font-family: nth($font-f, 1);
         opacity: 40%;
-        margin-bottom: 2rem;
+        margin: nth($size, 10);
     }
 }
 
 .remera-talle {
     p {
-        text-align: center;
-        font-size: 1.2rem;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin-top: 3rem;
+        @extend %t-center;
+        font-size: nth($size, 7);
+        font-family: nth($font-f, 3);
+        margin-top: nth($size, 10);
     }
 }
 
 .tabla {
-    display: flex;
-    justify-content: center;
+    @extend %orden2;
 }
 
 .table-style {
-    text-align: center;
+    @extend %t-center;
     border-collapse: collapse;
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    min-width: 500px;
+    font-size: nth($size, 6);
+    font-family: nth($font-f, 2);
+    min-width: nth($size, 16);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     width: 80%;
     thead {
-        background-color: #75C5B5;
+        background-color: nth($colores, 7);
         tr {
-            color: aliceblue;
+            color: nth($colores, 13);
             text-align: center;
         }
     }
     th,
     td {
-        padding: 12px 15px;
+        padding: nth($size, 5) nth($size, 6);
     }
 }
 
+@media (max-width:768px) {
+    .title-gdt {
+        text-align: center;
+    }
+    .table-style {
+        min-width: nth($size, 15);
+    }
+}
 

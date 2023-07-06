@@ -1,53 +1,62 @@
 #footer {
-    width: 100%;
-    background-color: #A9EECF;
-    text-align: center;
-    margin-top: 12rem;
+    width: map-get($mIfooter, wdh);
+    background-color: map-get($mIfooter, bg-c);
+    text-align: map-get($mIfooter, t-ctr);
+    margin-top: map-get($mIfooter, m-t);
     .g-1 {
         width: 100%;
         max-width: 1200px;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
-        padding: 45px 0px;
-         h2 {
-            color: #002D19;
-            margin-bottom: 25px;
-            font-size: 15px;
-            font-family: Arial, Helvetica, sans-serif;
+        grid-gap: nth($size, 10);
+        padding: nth($size, 9) 0;
+        .title-fot {
+            color: nth($colores, 1);
+            margin-bottom: nth($size, 8);
+            font-size: nth($size, 6);
+            font-family: nth($font-f, 2);
             font-weight: 1000;
         }
         img{
-            width: 35px;
-            height: 20px;
+            width: nth($size, 8);
+            height: nth($size, 7);
         }
         a {
             display: inline-block;
             text-decoration: none;
-            width: 45px;
-            height: 45px;
-            line-height: 45px;
-            color: white;
-            background-color:#75C5B5;
-            text-align: center;
+            width: nth($size, 10);
+            height: 0;
+            line-height: 0;
+            color: nth($colores, 12);
+            background-color: nth($colores, 7);
+            @extend %t-center;
             transition: all 300ms ease;
         }
         a:hover {
-            color: #297E6D ;
+            color: nth($colores, 3);
         }
         p {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            font-family: nth($font-f, 6); 
             opacity: 50%;
         }
     }
     .g-2 {
-        background-color: #D0F9E7;
-        padding: 5px;
-        text-align: center;
-        color: #1D553D; 
+        @include cM (#D0F9E7, #297E6D, 5px);
+        @extend %t-center;
         small {
-            font-size: 10px;
+            font-size: nth($size, 5);
+        }
+    }
+}
+
+@media (max-width:768px) {
+    #footer {
+        .g-1 {
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: nth($size, 8);
+            padding: nth($size, 8) 0;
         }
     }
 }
