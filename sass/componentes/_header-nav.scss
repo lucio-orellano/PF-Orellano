@@ -5,14 +5,25 @@
     position:map-get($mIheader, pst);
     top: map-get($mIheader, tp);
     z-index: map-get($mIheader, z-idx);
-    .navbar-local {
-        font-family: nth($size, 7);
+    .icon-nace {
+        font-family: nth($font-f, 8);
     }
-    .nav-local {
-        font-family: nth($size, 5);
-        @extend %transform;
-        font-size: nth($size, 6);
+
+    .collapse {
+        .nav-link {
+            font-family: nth($font-f, 2);
+        }
+        .nav-item {
+            @extend %t-center;
+            color: nth($colores, 9);
+            margin: 8px nth($size, 5);
+            border-radius: nth($size, 4);
+        }
+        .nav-item:hover {
+            background-color: nth($colores, 8);
+        }
     }
 }
+
   
   

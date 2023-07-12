@@ -31,7 +31,10 @@
             font-family: nth($font-f, 2);
             @extend %transform;
             font-size: nth($size, 5);
-        }    
+        } 
+        .btn-local:hover {
+            background-color: nth($colores, 7) !important;
+        }   
         .price {
             opacity: 90%;
         }
@@ -61,7 +64,7 @@
             width: nth($size, 15);
             margin-bottom: nth($size, 8);
             .d-img {
-                height: nth($size, 15);
+                height: nth($size, 18);
             }
         }
     }

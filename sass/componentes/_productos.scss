@@ -3,7 +3,7 @@
     font-family: nth($font-f, 1);
     @extend %transform;
     font-size: nth($size, 8);
-    margin-top: nth($size, 12);
+    margin-top: nth($size, 13);
     hr {
         color: nth($colores , 2);
     }
@@ -38,11 +38,11 @@
     .container-product {
         display: grid;
         grid-template-columns: repeat(4 ,1fr);
-        gap: nth($size, 8);
+        gap: nth($size, 9);
         margin-right: nth($size, 8);
         .product-img {
             width: 100%;
-            height: 70%;
+            height: 60%;
         }
         .product-detal {
             @extend %orden1;
@@ -71,7 +71,7 @@
             border-radius: nth($size, 5);
             @extend %transform;
             font-family: nth($font-f, 5);
-            font-size: nth($size, 5);
+            font-size: nth($size, 19);
         }
         .product-btn:hover {
             background-color: nth($colores, 12);
@@ -98,7 +98,7 @@
             margin: nth($size, 8) nth($size, 8);
             .product-img {
                 width: 100%;
-                max-height: 60%;
+                max-height: 55%;
             }
             .product-title {
                 font-size: nth($size, 7);

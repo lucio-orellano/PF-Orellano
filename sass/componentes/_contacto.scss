@@ -1,5 +1,6 @@
 .title-cto {
     margin: nth($size, 10);
+    margin-top: nth($size, 13);
     font-family: nth($font-f, 1);
     @extend %transform;
     font-size: nth($size, 8);

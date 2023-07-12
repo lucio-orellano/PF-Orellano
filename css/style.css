@@ -8,11 +8,11 @@
   justify-content: center;
 }
 
-#footer .g-2, #footer .g-1 a, .formulario form, .txt-cto p, .table-style, .remera-talle p, .txt-gdt P, .container-l .container-product .product-detal, .container-l #aside-product h4, .prod-destac .card {
+#footer .g-2, #footer .g-1 a, .formulario form, .txt-cto p, .table-style, .remera-talle p, .txt-gdt P, .container-l .container-product .product-detal, .container-l #aside-product h4, .prod-destac .card, .header .collapse .nav-item {
   text-align: center;
 }
 
-.formulario form .title-login, .title-cta, .title-cto, .title-gdt, .container-l .container-product .product-btn, .title-prod, .prod-destac .card .btn-local, .prod-destac .card .card-title, .title-destac, .header .nav-local {
+.formulario form .title-login, .title-cta, .title-cto, .title-gdt, .container-l .container-product .product-btn, .title-prod, .prod-destac .card .btn-local, .prod-destac .card .card-title, .title-destac {
   text-transform: uppercase;
 }
 
@@ -24,12 +24,19 @@
   top: 0;
   z-index: 100;
 }
-.header .navbar-local {
-  font-family: 20px;
+.header .icon-nace {
+  font-family: "Arial Narrow Bold";
 }
-.header .nav-local {
-  font-family: 10px;
-  font-size: 15px;
+.header .collapse .nav-link {
+  font-family: Helvetica;
+}
+.header .collapse .nav-item {
+  color: #252525;
+  margin: 8px 10px;
+  border-radius: 5px;
+}
+.header .collapse .nav-item:hover {
+  background-color: #D0F9E7;
 }
 
 #main {
@@ -74,6 +81,9 @@
   font-family: Helvetica;
   font-size: 10px;
 }
+.prod-destac .card .btn-local:hover {
+  background-color: #75C5B5 !important;
+}
 .prod-destac .card .price {
   opacity: 90%;
 }
@@ -100,14 +110,14 @@
     margin-bottom: 25px;
   }
   .prod-destac .card .d-img {
-    height: 300px;
+    height: 350px;
   }
 }
 .title-prod {
   margin: 40px;
   font-family: sans-serif Arial;
   font-size: 25px;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .title-prod hr {
   color: #009753;
@@ -140,12 +150,12 @@
 .container-l .container-product {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  gap: 30px;
   margin-right: 25px;
 }
 .container-l .container-product .product-img {
   width: 100%;
-  height: 70%;
+  height: 60%;
 }
 .container-l .container-product .product-detal {
   background-color: #89EEC0;
@@ -175,7 +185,7 @@
   border: 1px solid;
   border-radius: 10px;
   font-family: Tahoma;
-  font-size: 10px;
+  font-size: 12px;
 }
 .container-l .container-product .product-btn:hover {
   background-color: white;
@@ -202,7 +212,7 @@
   }
   .container-l .container-product .product-img {
     width: 100%;
-    max-height: 60%;
+    max-height: 55%;
   }
   .container-l .container-product .product-title {
     font-size: 20px;
@@ -210,6 +220,7 @@
 }
 .title-gdt {
   margin: 40px;
+  margin-top: 100px;
   font-family: sans-serif Arial;
   font-size: 25px;
 }
@@ -259,6 +270,7 @@
 }
 .title-cto {
   margin: 40px;
+  margin-top: 100px;
   font-family: sans-serif Arial;
   font-size: 25px;
 }
@@ -350,6 +362,7 @@
 }
 .title-cta {
   margin: 40px;
+  margin-top: 100px;
   font-family: sans-serif Arial;
   font-size: 25px;
 }
@@ -368,9 +381,9 @@
 }
 .formulario form .title-login {
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 20px;
-  font-family: Geneva;
+  font-family: Helvetica;
   font-weight: 1000;
 }
 .formulario form label {
@@ -395,6 +408,7 @@
   padding: 1px 15px;
   border: none;
   font-size: 20px;
+  font-family: Helvetica;
 }
 .formulario form .button:hover {
   color: #252525;
@@ -431,11 +445,14 @@
   padding: 30px 0;
 }
 #footer .g-1 .title-fot {
-  color: #002D19;
   margin-bottom: 25px;
   font-size: 15px;
   font-family: Helvetica;
   font-weight: 1000;
+}
+#footer .g-1 .title-fot p {
+  color: #002D19;
+  font-family: sans-serif Impact;
 }
 #footer .g-1 img {
   width: 25px;
@@ -454,9 +471,8 @@
 #footer .g-1 a:hover {
   color: #297E6D;
 }
-#footer .g-1 p {
-  font-family: sans-serif Impact;
-  opacity: 50%;
+#footer .g-1 .txt-footer {
+  opacity: 60%;
 }
 #footer .g-2 {
   background-color: #D0F9E7;
